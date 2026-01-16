@@ -1,0 +1,19 @@
+img{
+    width:120px;
+}
+
+img, th, td{
+    padding: 8px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: solid 2px black;
+}
+
+caption{
+    font-weight: bold;
+}
