@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción al Taller de Fotografía</title>
+</head>
+<body>
+    <h1>Formulario de Inscripción al Taller de Fotografía</h1>
+    <form>
+        <fieldset>
+            <legend><h2>Datos Personales</h2></legend>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" size="44">
+            <label>Apellidos:</label>
+            <input type="text" name="apellidos" size="44">
+            <label>DNI:</label>
+            <input type="text" name="DNI">
+            <label>Email:</label>
+            <input type="email" name="email">
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" pattern="[0-9]{9}">
+        </fieldset>
+        <fieldset>
+            <legend><h2>Datos del Taller</h2></legend>
+            <label>¿Tienes cámara propia?</label><br>
+            <input type="radio" checked>Sí
+            <input type="radio">No<br><br>
+            <label>Tipo de cámara:</label>
+            <select>
+                <option>Compacta</option>
+                <option>Réflex</option>
+                <option>Mirrorless</option>
+                <option disabled>Análogica</option>
+            </select><br><br>
+            <label>Nivel de experiencia:</label>
+            <select>
+                <option>Principiante</option>
+                <option>Intermedio</option>
+                <option>Avanzado</option>
+            </select><br><br>
+            <label>Áreas de interés:</label><br>
+            <input type="checkbox">Retrato
+            <input type="checkbox">Paisaje
+            <input type="checkbox">Fotografia nocturna
+            <input type="checkbox" disabled>Edición digital<br><br>
+            <label>Color favorito para la edición:</label>
+            <input type="color"><br><br>
+            <label>Comentarios adicionales:</label><br>
+            <textarea maxlength="200" minlength="20" rows="7" cols="60" placeholder="Escribe aquí tu motivación o necesidades (20-200 caracteres)"></textarea><br><br>
+            <input type="submit" value="Enviar" class="enviar">
+            <input type="reset" value="Borrar" class="borrar">
+        </fieldset>
+    </form>
+</body>
+</html>
